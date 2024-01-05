@@ -11,7 +11,7 @@ def connectionBD():
         connection = mysql.connector.connect(
             host="roundhouse.proxy.rlwy.net",
                 #host="viaduct.proxy.rlwy.net",
-            port=5217,
+            port=52172,
             user="root",
             passwd="acBHch-AFEeg3EHb36FG6fEB5G26aFDf",
                 #passwd="-D2eD6aDb5Bg6dEbhAAeBB6gd3EheaBg",
