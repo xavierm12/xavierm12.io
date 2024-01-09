@@ -125,7 +125,7 @@ def loginCliente():
                     session['cedula'] = account['cedula']
                     session['rol'] = account['id_rol']
 
-                    flash('la sesión fue correcta.', 'success')
+                    flash('has ingresado al Data Center.', 'success')
                     return redirect(url_for('inicio'))
                 else:
                     # La cuenta no existe o el nombre de usuario/contraseña es incorrecto
@@ -148,7 +148,7 @@ def cerraSesion():
             session.pop('id', None)
             session.pop('name_surname', None)
             session.pop('email', None)
-            flash('tu sesión fue cerrada correctamente.', 'success')
+            flash('sesion cerrada, saliendo del Data Center.', 'success')
             return redirect(url_for('inicio'))
         else:
             flash('recuerde debe iniciar sesión.', 'error')
