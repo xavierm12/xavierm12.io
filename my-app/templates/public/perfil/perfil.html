@@ -61,7 +61,7 @@
             {%endif%}
           </div>
           <div class="mt-3">
-            <label for="rol" class="form-label">Rol</label>
+            <label for="rol" class="form-label">Cargo</label>
             <select class="form-select" name="selectRol" {%if dataLogin.rol == 2 %} disabled {%endif%}>
               {% for rol in roles%}
               {% if rol.id_rol == info_perfil_session[0]['id_rol']%}
