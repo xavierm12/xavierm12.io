@@ -32,7 +32,7 @@
     >
       <a href="/reporte-accesos" class="menu-link">
         <i class="menu-icon bi bi-file-lock-fill"></i>
-        <div data-i18n="Tables">Reporte Accesos</div>
+        <div data-i18n="Tables">Reporte Accesos Data Center</div>
       </a>
     </li>
     {% if dataLogin.rol == 1 %}
@@ -50,7 +50,7 @@
     >
       <a href="/lista-de-usuarios" class="menu-link">
         <i class="menu-icon bi bi-person-lines-fill"></i>
-        <div data-i18n="Tables">Lista de Usuarios</div>
+        <div data-i18n="Tables">Lista Usuarios Data Center</div>
       </a>
     </li>
     {%endif%}
@@ -59,13 +59,13 @@
     >
       <a href="/mi-perfil/{{dataLogin.id}}" class="menu-link">
         <i class="menu-icon bi bi-person-fill-gear"></i>
-        <div data-i18n="Tables">Mi Perfil</div>
+        <div data-i18n="Tables">Perfil Data Center</div>
       </a>
     </li>
     <li class="menu-item">
       <a href="{{ url_for('cerraSesion') }}" class="menu-link">
         <i class="menu-icon tf-icons bx bi-box-arrow-right"></i>
-        <div data-i18n="Tables">Salir</div>
+        <div data-i18n="Tables">Salir de Data Center</div>
       </a>
     </li>
   </ul>
