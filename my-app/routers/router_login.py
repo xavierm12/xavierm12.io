@@ -56,7 +56,6 @@ def cpanelRegisterUserBD():
         id_area = request.form['selectArea']
         id_rol = request.form['selectRol']
         pass_user = request.form['pass_user']
-        
 
         resultData = recibeInsertRegisterUser(
             cedula, name, surname, id_area,id_rol,pass_user)
